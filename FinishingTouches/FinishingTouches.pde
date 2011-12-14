@@ -1,20 +1,10 @@
-// ----------------------------------------------------------------------------
-// FinishingTouches
-// Revision 1.2
-// August 23, 2009
+// -------------------------------------------------------------------------------------------------
+// FinishingTouches - Adds green and blue LED PWM output setting to DontFadeAway
+// A project of HackPittsburgh (http://www.hackpittsburgh.org)
 //
-// Adds green and blue LED PWM output setting to DontFadeAway.
-//
-// Jon Speicher
-// jonathan@hackpittsburgh.org
-// http://www.hackpittsburgh.org
-//
-// This content is made available under the Creative Commons Attribution-
-// Noncommercial-Share Alike 3.0 Unported license.
-//
-// http://creativecommons.org/licenses/by-nc-sa/3.0
-//
-// ----------------------------------------------------------------------------
+// By Jonathan Speicher (jonathan@hackpittsburgh.org)
+// Licensed under CC BY-NC-SA 3.0: http://creativecommons.org/licenses/by-nc-sa/3.0
+// -------------------------------------------------------------------------------------------------
 
 int redLedPin = 9;
 int greenLedPin = 10;
@@ -32,28 +22,28 @@ int redPotVal = 0;
 int greenPotVal = 0;
 int bluePotVal = 0;
 
-// ----------------------------------------------------------------------------
-// setup: Run once, when the sketch is started.
+// -------------------------------------------------------------------------------------------------
+// setup: Run once, when the sketch is started
 
-void setup() 
+void setup()
 {
-  Serial.begin(9600);            // Opens the serial port.
+  Serial.begin(9600);            // Opens the serial port
 }
 
-// ----------------------------------------------------------------------------
-// loop: Run over and over again.
+// -------------------------------------------------------------------------------------------------
+// loop: Run over and over again
 
 void loop()
 {
-  redPotVal = analogRead(redPotPin);      // Read the pot input value.
-  redLedVal = redPotVal / 4;              // Scale from analog range (0-1023) to digital range (0-255).
-  analogWrite(redLedPin, redLedVal);      // Sets the LED brightness.
-  
-  greenPotVal = analogRead(greenPotPin);  // Read the pot input value.
-  greenLedVal = greenPotVal / 4;          // Scale from analog range (0-1023) to digital range (0-255).
-  analogWrite(greenLedPin, greenLedVal);  // Sets the LED brightness.
-  
-  bluePotVal = analogRead(bluePotPin);    // Read the pot input value.
-  blueLedVal = bluePotVal / 4;            // Scale from analog range (0-1023) to digital range (0-255).
-  analogWrite(blueLedPin, blueLedVal);    // Sets the LED brightness.
+  redPotVal = analogRead(redPotPin);      // Read the pot input value
+  redLedVal = redPotVal / 4;              // Map from analog range (0-1023) to digital range (0-255)
+  analogWrite(redLedPin, redLedVal);      // Sets the LED brightness
+
+  greenPotVal = analogRead(greenPotPin);  // Read the pot input value
+  greenLedVal = greenPotVal / 4;          // Map from analog range (0-1023) to digital range (0-255)
+  analogWrite(greenLedPin, greenLedVal);  // Sets the LED brightness
+
+  bluePotVal = analogRead(bluePotPin);    // Read the pot input value
+  blueLedVal = bluePotVal / 4;            // Map from analog range (0-1023) to digital range (0-255)
+  analogWrite(blueLedPin, blueLedVal);    // Sets the LED brightness
 }
