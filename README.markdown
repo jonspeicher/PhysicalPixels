@@ -28,7 +28,9 @@ Minimum Requirements
 I've tested these sketches Arduino 0017 on Mac OS X 10.6.4, Windows XP, Windows Vista, and **nothing
 else**.
 
-**Note:** In specific, I have **not** built or tested these sketches with the latest Arduino 1.0!
+**Note:** In specific, I have **not** tested these sketches with the latest Arduino 1.0! They do
+build, however, and I've reviewed the porting guidelines to ensure that any issues have been
+addressed.
 
 Installation
 ============
@@ -103,6 +105,11 @@ History
 ---
 
 * Initial release
+
+0.2
+---
+
+* Arduino 1.0 compatibility
 
 License
 =======
