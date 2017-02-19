@@ -61,7 +61,7 @@ Sketch Progression
 These sketches fit the progression of HackPittsburgh's *Intro to Programming the Arduino* workshop. The specific details regarding the circuit used in each step
 as well as the code progression are contained within the workshop slides.
 
-To obtain the workshop slides, they may be downloaded from [my Dropbox archive](http://dl.dropbox.com/u/1031159/hackpgh-intro-to-programming-arduino.zip).
+To obtain the workshop slides, they may be downloaded from [my Dropbox archive](https://www.dropbox.com/s/msa3t6lobm4wxts/hackpgh-intro-to-programming-arduino.zip?dl=1).
 
 A brief description of the sketch progression is provided below.
 
